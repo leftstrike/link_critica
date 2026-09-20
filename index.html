@@ -93,39 +93,15 @@
     background: white;
 }
 
-     .quebra-desktop {
+ .quebra-desktop {
     display: inline;
 }
 
-     .quebra-mobile {
+.quebra-mobile {
     display: none;
 }
 
-     @media (max-width: 600px) {
-    .quebra-mobile {
-        display: inline;
-    }
-}
-
-     @media (max-width: 600px) {
-    .imagem-container {
-        width: 100%;
-        margin-bottom: 60px;
-    }
-}
-
-     @media (max-width: 600px) {
-    .texto {
-        font-size: 17px;
-    }
-}
-
-    .quebra-desktop {
-        display: none;
-    }
-}
-
-  .imagem-container {
+.imagem-container {
     width: 85%;
     margin: 60px auto 60px;
 }
@@ -145,7 +121,27 @@
     line-height: 1.4;
     text-align: left;
 }
-    </style>
+
+@media (max-width: 600px) {
+    .quebra-mobile {
+        display: inline;
+    }
+
+    .quebra-desktop {
+        display: none;
+    }
+
+    .imagem-container {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .texto {
+        font-size: 17px;
+    }
+}
+
+ </style>
 
 </head>
 
